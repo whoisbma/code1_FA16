@@ -1,3 +1,9 @@
+//create variables to store ball position and ball velocity
+//start the ball in the middle of the screen
+//give the ball a random velocity
+//add the ball speed to the ball direction
+//if the ball position moves outside the edge of the screen, reverse the direction
+
 float ballX;
 float ballY;
 

@@ -1,3 +1,7 @@
+//draw a rectangle starting at the top left of the screen
+//move it across to the right, then back left and down when it gets to the edge.
+//change the size of the rectangle based on the mouseX and mouseY position.
+
 int x = 0;
 int y = 0;
 float rot = 0;

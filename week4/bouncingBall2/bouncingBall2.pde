@@ -1,3 +1,5 @@
+//adjust the conditional statement to make the ball appear to bounce exactly at the edge
+
 float ballX;
 float ballY;
 

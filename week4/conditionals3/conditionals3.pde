@@ -1,3 +1,5 @@
+//same as previous sketch, but two rectangles now
+
 int rect1X, rect1Y;
 int rect1W, rect1H;
 

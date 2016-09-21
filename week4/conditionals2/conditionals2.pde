@@ -1,3 +1,7 @@
+//make variables to store values for drawing a rectangle
+//draw the rectangle
+//check to see if the mouse is inside the rectangle - if it is, change the color to red
+
 int rectX, rectY;
 int rectW, rectH;
 

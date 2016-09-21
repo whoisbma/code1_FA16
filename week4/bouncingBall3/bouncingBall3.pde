@@ -1,3 +1,6 @@
+//map the color of the ball to the x and y position of the ball 
+//remove the background refresh because PRETTY COLORS
+
 float ballX;
 float ballY;
 
@@ -9,6 +12,7 @@ float speedY;
 void setup() {
   size(600,600);
   background(0);
+  noStroke();
   
   ballX = width/2;
   ballY = height/2;
@@ -20,7 +24,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  //background(0);
   
   float r = map(ballX, 0, width, 0, 255);
   float g = map(ballY, 0, height, 0, 255);

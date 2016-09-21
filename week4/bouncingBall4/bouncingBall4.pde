@@ -1,3 +1,6 @@
+//restore the background refresh
+//but map the background color to the inverse of the ball color
+
 float ballX;
 float ballY;
 

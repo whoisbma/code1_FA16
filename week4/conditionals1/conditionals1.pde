@@ -1,3 +1,8 @@
+//draw a red line down the middle of the screen, from the top to bottom
+//draw text in the top left corner that compares the middle of the screen to the mouse X position
+//if the mouse X position is in the left half side, make the background light
+// otherwise, make the background dark
+
 void setup() {
   size(600,600);
 }

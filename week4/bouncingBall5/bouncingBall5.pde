@@ -1,3 +1,5 @@
+//when the mouse button is pressed, set the ball position to the mouse position and set a random velocity
+
 float ballX;
 float ballY;
 
@@ -45,6 +47,10 @@ void draw() {
   
 }
 
+
+//we haven't gone into this mousePressed() function yet - 
+//you'll notice it isn't called in the draw loop at all.
+//all will be explained soon. 
 void mousePressed() {
   ballX = mouseX;
   ballY = mouseY;

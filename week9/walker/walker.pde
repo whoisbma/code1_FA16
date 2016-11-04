@@ -1,31 +1,20 @@
-//also write one where two ellipses collide and make another one
-
-ArrayList<Walker> w = new ArrayList<Walker>();
+ArrayList<Walker> walkerList = new ArrayList<Walker>();
 
 void setup() {
-  size(700, 700);
+  size(1000, 700);
   noStroke();
+  background(255);
 }
 
 void draw() {
-  for (Walker walker : w) {
+  for (Walker walker : walkerList) {
     walker.move();
     walker.display();
-    for (Walker otherWalker : w) {
-      if (walker != otherWalker) {
-        if (dist(walker.x, walker.y, otherWalker.x, otherWalker.y) < 1) {
-          walker.siz++;
-          walker.xStep = walker.siz*2;
-          walker.yStep = walker.siz*2;
-        }
-      }
-    }
   }
 }
 
 void mousePressed() {
-  w.add(new Walker(mouseX,mouseY));
-  println("new walker");
+  walkerList.add(new Walker(mouseX, mouseY));
 }
 
 class Walker {
@@ -34,7 +23,7 @@ class Walker {
   Walker(float x, float y) {
     this.x = x;
     this.y = y;
-    this.siz = 1;
+    this.siz = 2;
     this.xStep = this.siz * 2;
     this.yStep = this.siz * 2;
   }

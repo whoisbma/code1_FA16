@@ -2,7 +2,7 @@ class Mario {
   float x;                // x position of Mario
   float y;                // y position of Mario
   boolean inAir;          // true if Mario is in the air from jumping or falling
-  PImage[] spriteFrames;  // store all the images tht
+  PImage[] spriteFrames;  // store all the images that are used to display mario
   int powerUpState;       // this integer tracks if Mario is big, small, has a fireflower, or is invincible
   int movementState;      // this integer tracks if Mario is running, 
   boolean direction;      // facing left or right?

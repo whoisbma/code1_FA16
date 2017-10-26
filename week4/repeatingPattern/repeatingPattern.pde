@@ -4,7 +4,7 @@
 
 int x = 0;
 int y = 0;
-float rot = 0;
+float angle = 0;
 
 void setup() {
   size(600,600);
@@ -12,11 +12,11 @@ void setup() {
 }
 
 void draw() {
-  rot+=5;
+  angle += 5;
   x+=5;
   
   translate(x,y);
-  rotate(radians(rot)); 
+  rotate(radians(angle)); 
   rect(0,0,mouseX,mouseY);
   
   if (x > width) {

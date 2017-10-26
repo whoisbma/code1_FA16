@@ -1,7 +1,7 @@
 ArrayList<ParticleSystem> systems = new ArrayList<ParticleSystem>();
 
 void setup() {
-  size(800, 800);
+  size(1200, 800);
 }
 
 void draw() {

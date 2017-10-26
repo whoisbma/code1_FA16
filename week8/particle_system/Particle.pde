@@ -15,7 +15,7 @@ class Particle {
     dy = random(-3, 3);
     c = color(random(150));
     s = random(40,100);
-    println("created a ball!");
+    //println("created a ball!");
     life = 60;
   }
 
@@ -32,17 +32,14 @@ class Particle {
     //c = color(map(dist(mouseX,mouseY,x,y),0,100,255,0));
     if (x < s/2 || x > width-s/2) {
       dx *= -1;
-      x += dx;
-    } else {
-      x += dx;
-    } 
+    }
     
     if (y < s/2 || y > height-s/2) {
       dy *= -1;
-      y += dy;
-    } else { 
-      y += dy;
     }
+    
+    x += dx;
+    y += dy;
   }
   
   void setSize(float siz) {
